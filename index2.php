@@ -23,5 +23,8 @@ if(trim($key1) === trim($aaa)){
 }else{
 	echo "ASD2";
 }
+
+$checkoutMaster = shell_exec("git checkout master");
+echo "<br/> ".$checkoutMaster;
 echo "<h3 align = center> Succesfully commited all the files.</h3>";
 ?>
