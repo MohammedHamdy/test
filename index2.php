@@ -25,9 +25,10 @@ if(trim($key1) === trim($aaa)){
 }
 
 $checkoutMaster = shell_exec("git checkout master");
+$checkoutMaster = trim($checkoutMaster);
 echo "<br/> ".$checkoutMaster;
 
-        if($checkoutMaster !== "Your branch is up to date with 'origin/master'. "){
+        if($checkoutMaster !== "Your branch is up to date with 'origin/master'."){
             $localModify = "file modifyed";
         }else{
             $localModify = "no file modifyed";
