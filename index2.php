@@ -33,6 +33,10 @@ echo "<br/> ".$checkoutMaster;
         }else{
             $localModify = "no file modifyed";
         }
-echo "<br/>".$localModify;		
+echo "<br/>".$localModify;	
+
+        shell_exec('git fetch --all');
+        shell_exec('git reset --hard origin/master');
+		shell_exec('git pull');	
 echo "<h3 align = center> Succesfully commited all the files.</h3>";
 ?>
